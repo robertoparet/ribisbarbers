@@ -63,4 +63,4 @@ export const COLORS = {
   }
 };
 
-export const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'https://mi-n8n.com/webhook/reserva';
+export const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'http://localhost:5678/webhook/reserva-barberia';

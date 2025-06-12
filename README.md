@@ -98,7 +98,7 @@ https://mi-n8n.com/webhook/reserva
 ### Variables de entorno
 Crear archivo `.env.local`:
 ```env
-NEXT_PUBLIC_WEBHOOK_URL=https://tu-webhook.com/reserva
+NEXT_PUBLIC_WEBHOOK_URL=http://localhost:5678/webhook/reserva-barberia
 ```
 
 ## 📱 Información de Contacto
