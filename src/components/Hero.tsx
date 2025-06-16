@@ -7,10 +7,9 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
+        <div className="mb-8">          <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
             <span className="text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text">
-              Rivis
+              Example
             </span>
             <span className="text-white">Barber</span>
           </h1>

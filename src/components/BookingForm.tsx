@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { SERVICES, WEBHOOK_URL } from '@/config/constants';
+import { SERVICES } from '@/config/constants';
 
 interface BookingFormData {
   fullName: string;
@@ -67,10 +67,8 @@ export default function BookingForm() {
       setSubmitMessage('Por favor, selecciona una fecha y hora futura.');
       setIsSubmitting(false);
       return;
-    }
-
-    try {
-      const response = await fetch(WEBHOOK_URL, {
+    }    try {
+      const response = await fetch('/api/webhook', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -80,20 +78,24 @@ export default function BookingForm() {
           timestamp: new Date().toISOString(),
           source: 'website'
         })
-      });
-
-      if (response.ok) {
-        setSubmitMessage('¡Reserva enviada con éxito! Te contactaremos pronto.');
-        setFormData({
-          fullName: '',
-          phone: '',
-          service: '',
-          date: '',
-          time: '',
-          comment: ''
-        });
+      });      if (response.ok) {
+        const result = await response.json();
+        if (result.success) {
+          setSubmitMessage('¡Reserva enviada con éxito! Te contactaremos pronto.');
+          setFormData({
+            fullName: '',
+            phone: '',
+            service: '',
+            date: '',
+            time: '',
+            comment: ''
+          });
+        } else {
+          throw new Error(result.message || 'Error al enviar la reserva');
+        }
       } else {
-        throw new Error('Error al enviar la reserva');
+        const errorResult = await response.json().catch(() => ({}));
+        throw new Error(errorResult.message || 'Error al enviar la reserva');
       }
     } catch (error) {
       console.error('Error submitting form:', error);

@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://rivisbarber.com/sitemap.xml',
+    sitemap: 'https://examplebarber.com/sitemap.xml',
   };
 }

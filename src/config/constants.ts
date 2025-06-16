@@ -1,6 +1,6 @@
-// Configuration constants for RivisBarber
+// Configuration constants for Example Barber
 export const BUSINESS_INFO = {
-  name: 'RivisBarber',
+  name: 'Example Barber',
   slogan: 'Estilo y precisión para el hombre moderno',
   phone: '+34 600 123 456',
   whatsapp: '34600123456',
@@ -8,9 +8,9 @@ export const BUSINESS_INFO = {
   city: 'Madrid',
   postalCode: '28001',
   country: 'España',
-  email: 'info@rivisbarber.com',
-  instagram: '@rivisbarber',
-  instagramUrl: 'https://instagram.com/rivisbarber',
+  email: 'info@examplebarber.com',
+  instagram: '@examplebarber',
+  instagramUrl: 'https://instagram.com/examplebarber',
   schedule: {
     weekdays: 'Lun - Sáb: 9:00 - 20:00',
     weekend: 'Domingo: Cerrado'

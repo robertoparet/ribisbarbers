@@ -1,6 +1,14 @@
-# 💈 RivisBarber - Barbería Moderna
+# 💈 Example Barber - Barbería Moderna
 
-Una página web elegante y moderna para la barbería "RivisBarber", diseñada exclusivamente para hombres que buscan estilo y precisión.
+Una página web elegante y moderna para la barbería "Example Barber" especializada en servicios masculinos. Diseño minimalista con enfoque en la experiencia del usuario y reservas online.
+Crear archivo `.env.local`:
+```env
+# Para desarrollo/testing
+NEXT_PUBLIC_WEBHOOK_URL=http://localhost:5678/webhook-test/reserva-barberia
+
+# Para producción (se usa automáticamente si no hay .env.local)
+# NEXT_PUBLIC_WEBHOOK_URL=http://localhost:5678/webhook/reserva-barberia
+``` diseñada exclusivamente para hombres que buscan estilo y precisión.
 
 ## 🌟 Características
 
@@ -105,7 +113,7 @@ NEXT_PUBLIC_WEBHOOK_URL=http://localhost:5678/webhook/reserva-barberia
 
 - **Teléfono:** +34 600 123 456
 - **WhatsApp:** [Contactar directamente](https://wa.me/34600123456)
-- **Instagram:** [@rivisbarber](https://instagram.com/rivisbarber)
+- **Instagram:** [@examplebarber](https://instagram.com/examplebarber)
 - **Dirección:** Calle Principal, 123 - 28001 Madrid
 - **Horario:** Lun - Sáb: 9:00 - 20:00
 
@@ -222,9 +230,9 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 ## 📞 Soporte
 
 Para soporte técnico o consultas:
-- 📧 Email: info@rivisbarber.com
+- 📧 Email: info@examplebarber.com
 - 💬 WhatsApp: +34 600 123 456
-- 📱 Instagram: @rivisbarber
+- 📱 Instagram: @examplebarber
 
 ---
 

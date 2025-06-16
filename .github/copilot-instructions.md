@@ -1,9 +1,9 @@
-# RivisBarber Project Instructions
+# Example Barber Project Instructions
 
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
 ## Project Overview
-This is a modern, elegant barbershop website for "RivisBarber" targeting exclusively men. The design should be minimalist, masculine, and professional.
+This is a modern, elegant barbershop website for "Example Barber" targeting exclusively men. The design should be minimalist, masculine, and professional.
 
 ## Tech Stack
 - Next.js 14 with App Router

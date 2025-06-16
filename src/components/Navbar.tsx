@@ -34,10 +34,9 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold">
+          <div className="flex-shrink-0">            <h1 className="text-2xl font-bold">
               <span className="text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text">
-                Rivis
+                Example
               </span>
               <span className="text-white">Barber</span>
             </h1>
